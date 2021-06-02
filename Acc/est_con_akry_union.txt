@@ -1,0 +1,18 @@
+Select  employees.emp_name,employees.emp_no,base_bdl.name,con_est.est_val
+FROM     con_est,employees,base_bdl
+WHERE 
+employees.emp_name='⁄·Ì ⁄„—' and employees.dgree_id=con_est.degree_id and employees.class_id=con_est.class_id and con_est.est_name=base_bdl.id
+
+union
+
+Select  employees.emp_name,employees.emp_no,est_akry.est_ok_name,est_akry.est_ok_val FROM     employees,est_akry WHERE employees.emp_name='⁄·Ì ⁄„—' and employees.emp_id=est_akry.emp_id
+
+““““““““““““““““““““““““““““““““““““““““
+select y.emp_name,x.emp_no,x.name,x.est_val,y.est_ok_name,y.est_ok_val
+ from (Select  emp1.emp_id,emp1.emp_name,emp1.emp_no,base_bdl.name,con_est.est_val
+FROM con_est,employees emp1,base_bdl
+WHERE emp1.dgree_id=con_est.degree_id and emp1.class_id=con_est.class_id and con_est.est_name=base_bdl.id) x
+right join (Select  employees.emp_name,employees.emp_id,employees.emp_no,est_akry.est_ok_name,est_akry.est_ok_val
+FROM employees,est_akry
+WHERE employees.emp_id=est_akry.emp_id)y on y.est_ok_name = x.name
+where y.emp_name='⁄·Ì ⁄„—' 

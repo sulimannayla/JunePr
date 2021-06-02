@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="10305" DocumentName="ActiveReports Document" ScriptLang="C#" CodeFile="DIFF1.vb">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0; " />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="2160" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="2677.5" Top="405" Width="3690" Height="540" Caption="إدارة الشئون المالية والمحاسبية" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 14pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="5940" Top="900" Width="1552.5" Height="495" Caption="مــــوازنــــة" Style="ddo-char-set: 1; font-weight: normal; font-size: 14pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Label" Name="Label9" MOD="4" Left="2160" Top="0" Width="4770" Height="540" Caption="رئاسة الجهاز القضائي الجزيرة  " Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 14pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Field" Name="TextBox" MOD="4" Left="2565" Top="900" Width="3375" Height="495.36" Text="TextBox" Style="ddo-char-set: 1; text-align: center; font-size: 14pt; font-family: Microsoft Sans Serif; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="6030" Top="1417.5" Width="1372.5" Height="450" Caption="التصنيـــف" Style="ddo-char-set: 1; font-weight: normal; font-size: 14pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Field" Name="TextBox1" MOD="4" Left="2497.5" Top="1507.5" Width="3510" Height="450.72" Text="TextBox1" Style="text-align: right; " />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="315" BackStyle="1" BackColor="0" CanShrink="0">
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="8460" Top="0" Width="1800" Height="360" Caption="اسم الموظف" Style="color: White; text-align: center; " />
+      <Control Type="AR.Label" Name="Label5" MOD="4" Left="7110" Top="0" Width="1530" Height="360" Caption="الزيادة" Style="color: White; text-align: center; " />
+      <Control Type="AR.Label" Name="Label6" MOD="4" Left="5940" Top="0" Width="1260" Height="360" Caption="النقصان" Style="color: White; " />
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="0" Top="0" Width="2880" Height="360" Caption="الــبــيـــان" Style="color: White; text-align: center; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="4590" Top="0" Width="1260" Height="360" Caption="المرتب السابق" Style="color: White; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="3240" Top="0" Width="1260" Height="360" Caption="المرتب الحالي" Style="color: White; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="315" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="txtname_" DataField="name_" MOD="4" Left="22.5" Top="0" Width="3150" Height="288" Text="name_" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtzida" DataField="zida" MOD="4" Left="7087.5" Top="0" Width="1440" Height="288" Text="zida" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtngsan" DataField="ngsan" MOD="4" Left="5647.5" Top="0" Width="1440" Height="288" Text="ngsan" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtsafy_befor" DataField="safy_befor" MOD="4" Left="4455" Top="0" Width="1170" Height="288" Text="safy_befor" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="txtsafy_haly" DataField="safy_haly" MOD="4" Left="3217.5" Top="0" Width="1215" Height="288" Text="safy_haly" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="emp_name" MOD="4" Left="8550" Top="0" Width="1710" Height="270" Text="emp_name" />
+    </Section>
+    <Section Type="PageFooter" Name="PageFooter" Height="299" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Field" Name="zida_txt" DataField="zida" MOD="4" Left="7095" Top="0" Width="1440" Height="288" Text="zida" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="ngsan_txt" DataField="ngsan" MOD="4" Left="5850" Top="0" Width="1185" Height="288" Text="ngsan" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="safy_befor_txt" DataField="safy_befor" MOD="4" Left="4470" Top="0" Width="1170" Height="288" Text="safy_befor" Style="text-align: center; " />
+      <Control Type="AR.Field" Name="safy_haly_txt" DataField="safy_haly" MOD="4" Left="3045" Top="0" Width="1215" Height="288" Text="safy_haly" Style="text-align: center; " />
+      <Control Type="AR.Label" Name="Label10" MOD="4" Left="8640" Top="0" Width="1620" Height="270" Caption="الجـمــــــلـة" Style="ddo-char-set: 1; font-weight: bold; font-size: 12pt; " />
+    </Section>
+    <Section Type="ReportFooter" Name="ReportFooter" Height="0" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <OleDbDataSource ConnectE="fnDeMoPQcekew7TB2OSGi/AP7SPyeRn/6RcPcVTnnbBLPzb0t53eP3t8NK8UrvyPYJMvWX6+kHoFQZBaAmmwaOovUjqk0oIVIvvqufOP0YUuGF6HJQADAaYdU0/kBPwmN3UhV6vyeW+/FlBk7I2B9w==" SQL="Select * from  mwzna,employees;" />
+  </DataSources>
+  <PageSettings LeftMargin="720" RightMargin="720" PaperSize="9" PaperWidth="11906" PaperHeight="16838" PaperName="" />
+</ActiveReportsLayout>

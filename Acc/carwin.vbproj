@@ -1,0 +1,800 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{9539F498-C235-4849-B01D-49D85B7009EC}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "carwin"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "carwin"
+                StartupObject = "carwin.SECURITY"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "ActiveReports"
+                    AssemblyName = "ActiveReports"
+                    HintPath = "C:\Program Files\Common Files\Data Dynamics\ActiveReports for .NET 2.0\ActiveReports.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net 2.0"
+                />
+                <Reference
+                    Name = "ActiveReports.Viewer"
+                    AssemblyName = "ActiveReports.Viewer"
+                    HintPath = "C:\Program Files\Common Files\Data Dynamics\ActiveReports for .NET 2.0\ActiveReports.Viewer.dll"
+                    AssemblyFolderKey = "hklm\dn\activereports for .net 2.0"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Windows.Forms"
+                    AssemblyName = "CrystalDecisions.Windows.Forms"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Windows.Forms.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.Shared"
+                    AssemblyName = "CrystalDecisions.Shared"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.Shared.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "CrystalDecisions.ReportSource"
+                    AssemblyName = "CrystalDecisions.ReportSource"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\1.1\Managed\CrystalDecisions.ReportSource.dll"
+                    AssemblyFolderKey = "hklm\crystal.net"
+                />
+                <Reference
+                    Name = "System.Web.Services"
+                    AssemblyName = "System.Web.Services"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.Services.dll"
+                />
+                <Reference
+                    Name = "CrystalDecisions.CrystalReports.Engine"
+                    AssemblyName = "CrystalDecisions.CrystalReports.Engine"
+                    HintPath = "C:\Program Files\Common Files\Crystal Decisions\2.5\managed\CrystalDecisions.CrystalReports.Engine.dll"
+                    AssemblyFolderKey = "hklm\crystal enterprise 10 .net"
+                />
+                <Reference
+                    Name = "stdole"
+                    Guid = "{00020430-0000-0000-C000-000000000046}"
+                    VersionMajor = "2"
+                    VersionMinor = "0"
+                    Lcid = "0"
+                    WrapperTool = "primary"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "app.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "basiksalary.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "basiksalary.resx"
+                    DependentUpon = "basiksalary.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "licenses.licx"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MAIN.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MAIN.ar.resx"
+                    DependentUpon = "MAIN.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MAIN.ar-SA.resx"
+                    DependentUpon = "MAIN.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MAIN.resx"
+                    DependentUpon = "MAIN.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "SECURITY.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SECURITY.resx"
+                    DependentUpon = "SECURITY.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "stop_est_con.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "stop_est_con.resx"
+                    DependentUpon = "stop_est_con.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "stope_salry.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "stope_salry.resx"
+                    DependentUpon = "stope_salry.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "viwe_est_bdl.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "viwe_est_bdl.resx"
+                    DependentUpon = "viwe_est_bdl.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "glo\AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "glo\database provider.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "glo\dgrees.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "glo\dgrees.resx"
+                    DependentUpon = "dgrees.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "glo\Module1.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "glo\Module2.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\ActiveRepcartype.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "ActiveRepcartype.vb"
+                />
+                <File
+                    RelPath = "reports\ActiveRepcartype.vb"
+                    DependentUpon = "ActiveRepcartype.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\ActiveReport1.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "ActiveReport1.vb"
+                />
+                <File
+                    RelPath = "reports\ActiveReport1.vb"
+                    DependentUpon = "ActiveReport1.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\ActiveReport2.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "ActiveReport2.vb"
+                />
+                <File
+                    RelPath = "reports\ActiveReport2.vb"
+                    DependentUpon = "ActiveReport2.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\ActiveReport3.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "ActiveReport3.vb"
+                />
+                <File
+                    RelPath = "reports\ActiveReport3.vb"
+                    DependentUpon = "ActiveReport3.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\actmintenance.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "actmintenance.vb"
+                />
+                <File
+                    RelPath = "reports\actmintenance.vb"
+                    DependentUpon = "actmintenance.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\banks.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\banks.resx"
+                    DependentUpon = "banks.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\bdalServ.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServ.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServ.vb"
+                    DependentUpon = "bdalServ.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServEmpD.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServEmpD1.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServEmpD1.vb"
+                    DependentUpon = "bdalServEmpD.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServEmpT.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServEmpT.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServEmpT.vb"
+                    DependentUpon = "bdalServEmpT.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServJud.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServJud.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServJud.vb"
+                    DependentUpon = "bdalServJud.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServJudD.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServJudD.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServJudD.vb"
+                    DependentUpon = "bdalServJudD.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServPolD.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServPolD.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServPolD.vb"
+                    DependentUpon = "bdalServPolD.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalServPolT.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalServPolT.vb"
+                />
+                <File
+                    RelPath = "reports\bdalServPolT.vb"
+                    DependentUpon = "bdalServPolT.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalTotalView.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalTotalView1.vb"
+                />
+                <File
+                    RelPath = "reports\bdalTotalView1.vb"
+                    DependentUpon = "bdalTotalView.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdalWajbaDet.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdalWajbaDet1.vb"
+                />
+                <File
+                    RelPath = "reports\bdalWajbaDet1.vb"
+                    DependentUpon = "bdalWajbaDet.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdeel.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdeel.vb"
+                />
+                <File
+                    RelPath = "reports\bdeel.vb"
+                    DependentUpon = "bdeel.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdeel2.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdeel21.vb"
+                />
+                <File
+                    RelPath = "reports\bdeel21.vb"
+                    DependentUpon = "bdeel2.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdeel4.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdeel41.vb"
+                />
+                <File
+                    RelPath = "reports\bdeel41.vb"
+                    DependentUpon = "bdeel4.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdeel5.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdeel51.vb"
+                />
+                <File
+                    RelPath = "reports\bdeel51.vb"
+                    DependentUpon = "bdeel5.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\bdeel6.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "bdeel6.vb"
+                />
+                <File
+                    RelPath = "reports\bdeel6.vb"
+                    DependentUpon = "bdeel6.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\cardatat.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\cardatat.resx"
+                    DependentUpon = "cardatat.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\DIFF.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "DIFF1.vb"
+                />
+                <File
+                    RelPath = "reports\DIFF1.vb"
+                    DependentUpon = "DIFF.rpx"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\diff.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\diff.resx"
+                    DependentUpon = "diff.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\EstNameRep.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "EstNameRep1.vb"
+                />
+                <File
+                    RelPath = "reports\EstNameRep1.vb"
+                    DependentUpon = "EstNameRep.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\Form3.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Form3.resx"
+                    DependentUpon = "Form3.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\Form5.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\Form5.resx"
+                    DependentUpon = "Form5.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\ind.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "ind.vb"
+                />
+                <File
+                    RelPath = "reports\ind.vb"
+                    DependentUpon = "ind.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\index.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "index1.vb"
+                />
+                <File
+                    RelPath = "reports\index1.vb"
+                    DependentUpon = "index.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\index.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\index.resx"
+                    DependentUpon = "index.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\list.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "list.vb"
+                />
+                <File
+                    RelPath = "reports\list.vb"
+                    DependentUpon = "list.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\listbank.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "listbank1.vb"
+                />
+                <File
+                    RelPath = "reports\listbank1.vb"
+                    DependentUpon = "listbank.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\listbankSS.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "listbankSS.vb"
+                />
+                <File
+                    RelPath = "reports\listbankSS.vb"
+                    DependentUpon = "listbankSS.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\listKhazina.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "listKhazina1.vb"
+                />
+                <File
+                    RelPath = "reports\listKhazina1.vb"
+                    DependentUpon = "listKhazina.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\listvi.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\listvi.resx"
+                    DependentUpon = "listvi.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\mencard.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "mencard1.vb"
+                />
+                <File
+                    RelPath = "reports\mencard1.vb"
+                    DependentUpon = "mencard.rpx"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\mowazna.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "mowazna.vb"
+                />
+                <File
+                    RelPath = "reports\mowazna.vb"
+                    DependentUpon = "mowazna.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\pritmentenance1.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\pritmentenance1.resx"
+                    DependentUpon = "pritmentenance1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\repcardatareco.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "repcardatareco.vb"
+                />
+                <File
+                    RelPath = "reports\repcardatareco.vb"
+                    DependentUpon = "repcardatareco.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\salary_cert.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "salary_cert1.vb"
+                />
+                <File
+                    RelPath = "reports\salary_cert1.vb"
+                    DependentUpon = "salary_cert.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "reports\salary_cert.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\sheet.vb"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "reports\sheet.resx"
+                    DependentUpon = "sheet.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "reports\totalsal.rpx"
+                    BuildAction = "EmbeddedResource"
+                    Generator = "ARVSPackage.VBCodeGenerator"
+                    LastGenOutput = "totalsal.vb"
+                />
+                <File
+                    RelPath = "reports\totalsal.vb"
+                    DependentUpon = "totalsal.rpx"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+            </Include>
+        </Files>
+        <StartupServices>
+            <Service ID = "{CF845C55-C321-4742-B673-E6212D061ED9}" />
+        </StartupServices>
+    </VisualBasic>
+</VisualStudioProject>
+

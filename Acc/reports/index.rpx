@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ActiveReportsLayout Version="3" PrintWidth="8685" DocumentName="ActiveReports Document" ScriptLang="C#" CodeFile="">
+  <StyleSheet>
+    <Style Name="Normal" Value="font-family: Arial; font-style: normal; font-variant: inherit; font-weight: normal; font-size: 10pt; font-size-adjust: inherit; font-stretch: inherit; color: rgb(0,0,0); background-repeat: inherit; background-attachment: inherit; opacity: inherit; word-spacing: inherit; letter-spacing: inherit; text-decoration: none; vertical-align: inherit; text-transform: inherit; text-align: inherit; text-indent: inherit; unicode-bidi: inherit; line-height: inherit; white-space: inherit; ddo-char-set: 0; " />
+    <Style Name="Heading1" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 16pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading2" Value="font-family: Times New Roman; font-style: italic; font-variant: inherit; font-weight: bold; font-size: 14pt; font-size-adjust: inherit; font-stretch: inherit; " />
+    <Style Name="Heading3" Value="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: bold; font-size: 13pt; font-size-adjust: inherit; font-stretch: inherit; " />
+  </StyleSheet>
+  <Sections>
+    <Section Type="ReportHeader" Name="ReportHeader" Height="1845" BackColor="16777215" CanShrink="0">
+      <Control Type="AR.Label" Name="Label1" MOD="4" Left="2850" Top="360" Width="3330" Height="450" Caption="إدارة الشئون المالية والمحاسبية" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Label" Name="Label2" MOD="4" Left="3577.5" Top="697.5" Width="1800" Height="405" Caption="قسم المرتبات" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Label" Name="Label" MOD="4" Left="2250" Top="1057.5" Width="4320" Height="450" Caption="قائمة الاسماء ورواتبها الاساسية" Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; font-family: PT Bold Heading; " />
+      <Control Type="AR.Label" Name="Label3" MOD="4" Left="2250" Top="0" Width="4050" Height="472.5" Caption="رئاسة الجهاز القضائي الجزيرة  " Style="ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 12pt; font-family: PT Bold Heading; " />
+    </Section>
+    <Section Type="PageHeader" Name="PageHeader" Height="464" BackStyle="1" BackColor="0" CanShrink="0">
+      <Control Type="AR.Label" Name="Label7" MOD="4" Left="6390" Top="0" Width="2340" Height="450" Caption="الرقـــــــــم" Style="color: White; ddo-char-set: 1; text-align: center; font-weight: normal; font-size: 14.25pt; font-family: Simplified Arabic; " />
+      <Control Type="AR.Label" Name="Label8" MOD="4" Left="3150" Top="0" Width="3240" Height="450" Caption="الاســـــــــــم" Style="color: White; ddo-char-set: 178; text-align: center; font-size: 14.25pt; font-family: Simplified Arabic; " />
+      <Control Type="AR.Label" Name="Label4" MOD="4" Left="0" Top="0" Width="3240" Height="450" Caption="الراتب الاساسى" Style="color: White; ddo-char-set: 178; text-align: center; font-size: 14.25pt; font-family: Simplified Arabic; " />
+    </Section>
+    <Section Type="Detail" Name="Detail" Height="374" BackColor="16777215" CanShrink="0" />
+    <Section Type="PageFooter" Name="PageFooter" Height="0" BackColor="16777215" CanShrink="0" />
+    <Section Type="ReportFooter" Name="ReportFooter" Height="360" BackColor="16777215" CanShrink="0" />
+  </Sections>
+  <DataSources>
+    <SqlDbDataSource ConnectE="vg1d3t5P2slqcKMxb597XPOudsN/2cZgDF3Pki3ZqiJ0aONr+MsKfd88fgC6GVKI7ujf5fzQ3ZXx7cHwlxrSPhrUZaJj63jSQz41HjDlJa8=" SQL="" />
+  </DataSources>
+  <PageSettings />
+</ActiveReportsLayout>

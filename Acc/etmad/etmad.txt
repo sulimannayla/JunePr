@@ -1,0 +1,146 @@
+ If Con.State = ConnectionState.Broken = False Then
+            Con.Close()
+        End If
+
+        Con.Open()
+
+        Dim DS51 As New DataSet
+        Dim t51 As DataTable
+        Dim cmd51 As New SqlClient.SqlCommand("SELECT class_id FROM classes where class_name ='" & class_txt.Text & "'", Con)
+        Dim dr51 As SqlClient.SqlDataReader = cmd51.ExecuteReader()
+        dr51.Read()
+        Dim class_i_d As String = dr51.Item("class_id")
+        dr51.Close()
+        If Trim(site_txt.Text) = "" Or Trim(class_txt.Text) = "" Or Trim(date_.Text) = "" Then
+            MsgBox("«ﬂ„· «œŒ«· «·»Ì«‰« ")
+            Exit Sub
+        End If
+        Dim i_d As Integer
+        If (class_txt.Text = "„ÊŸ›") Then
+            Dim DS02 As New DataSet
+            'Dim str02 As String = "Select employees.emp_id FROM con_est,employees,base_bdl WHERE employees.dgree_id=con_est.degree_id and employees.class_id=con_est.class_id and con_est.est_name=base_bdl.id"
+
+            Dim str02 As String = "Select employees.emp_id FROM  employees  WHERE employees.class_id ='" & class_i_d & "'"
+            Dim ADP02 As New SqlClient.SqlDataAdapter(str02, Con)
+            ADP02.Fill(DS02)
+            Dim k As Integer
+            For k = 0 To DS02.Tables(0).Rows.Count - 1
+                i_d = DS02.Tables(0).Rows(k).Item(0)
+                'begin///////////////////////////„⁄—›… ⁄œœ ”Ã·«  «·«” ﬁÿ«⁄«  «·À«» Â
+                Dim DSconest As New DataSet
+                Dim strconest As String = "Select employees.emp_id,base_bdl.name,con_est.est_val FROM con_est,employees,base_bdl WHERE employees.dgree_id=con_est.degree_id and employees.class_id=con_est.class_id and con_est.est_name=base_bdl.id  and employees.emp_id='" & i_d & "'"
+
+                Dim ADPconest As New SqlClient.SqlDataAdapter(strconest, Con)
+                ADPconest.Fill(DSconest)
+                Dim k_conest As Integer
+                'MsgBox(DSconest.Tables(0).Rows(k).Item("name"))
+                'MsgBox(DSconest.Tables(0).Rows(k).Item(1))
+                k_conest = DSconest.Tables(0).Rows.Count
+                'end//////////////////////„⁄—›… ⁄œœ ”Ã·«  «·«” ﬁÿ«⁄«  «·À«» Â
+                'begin**********************************„⁄—›… ⁄œœ ”Ã·«  «·«” ﬁÿ«⁄«  «·«Œ—Ì
+                Dim DSest_akry As New DataSet
+                Dim strest_akry As String = "  select employees.emp_id FROM employees,est_akry WHERE   employees.emp_id=est_akry.emp_id  and employees.emp_id='" & i_d & "'"
+                Dim ADPest_akry As New SqlClient.SqlDataAdapter(strest_akry, Con)
+                ADPest_akry.Fill(DSest_akry)
+                Dim k_est_akry As Integer
+                k_est_akry = DSconest.Tables(0).Rows.Count
+                'end******************************„⁄—›… ⁄œœ ”Ã·«  «·«” ﬁÿ«⁄«  «·«Œ—Ì
+                'begin******************************„⁄—›… ⁄œœ ”Ã·«  «·»œ·«  «·À«» Â
+                Dim DSconbdl As New DataSet
+                Dim strconbdl = "select employees.emp_id  FROM     employees,con_bdal WHERE   employees.dgree_id=con_bdal.dgree_id  and employees.class_id=con_bdal.class_id and  employees.emp_id='" & i_d & "'"
+                Dim ADPconbdl As New SqlClient.SqlDataAdapter(strconbdl, Con)
+                ADPest_akry.Fill(DSconbdl)
+                Dim k_conbdl As Integer
+                k_conbdl = DSconest.Tables(0).Rows.Count
+                'end******************************„⁄—›… ⁄œœ ”Ã·«  «·»œ·«  «·À«» Â
+                'begin******************************„⁄—›… ⁄œœ ”Ã·«  «·»œ·«  «·„ €Ì—…
+                Dim DSnot_conbdel As New DataSet
+                Dim strnot_conbdel = "select employees.emp_id  FROM     employees,not_conbdel WHERE   employees.emp_id=not_conbdel.emp_id   and  employees.emp_id='" & i_d & "'"
+                Dim ADPnot_conbdel As New SqlClient.SqlDataAdapter(strnot_conbdel, Con)
+                ADPnot_conbdel.Fill(DSnot_conbdel)
+                Dim k_not_conbdel As Integer
+                k_not_conbdel = DSnot_conbdel.Tables(0).Rows.Count
+                'end******************************„⁄—›… ⁄œœ ”Ã·«  «·»œ·«  «·„ €Ì—…
+                Dim reccount1 As Integer
+                If k_conest > k_est_akry Then
+                    reccount1 = k_conest
+                Else
+                    reccount1 = k_est_akry
+                End If
+                If reccount1 > k_conbdl Then
+
+                    reccount1 = reccount1
+                Else
+                    reccount1 = k_conbdl
+                End If
+                If reccount1 > k_not_conbdel Then
+                    reccount1 = reccount1
+                Else
+                    reccount1 = k_not_conbdel
+                End If
+                '/////////////////////////////////////ee//////////////////
+                Dim z As Integer
+                Dim con_est_name_ As String
+                Dim con_est_val_ As Integer
+                For z = 0 To reccount1
+                    '..
+                    MsgBox("12223")
+                    Dim i2 As Integer
+                    'For i2 = 0 To k_conest
+                    If (DSconest.Tables(0).Rows(1).Item("Name") Is DBNull.Value) Then
+                        con_est_name_ = ""
+                    Else
+                        con_est_name_ = DSconest.Tables(0).Rows(1).Item("name")
+                    End If
+                    '.
+                    If (DSconest.Tables(0).Rows(1).Item("est_val") Is DBNull.Value) Then
+                        con_est_name_ = ""
+                    Else
+                        con_est_name_ = DSconest.Tables(0).Rows(1).Item("est_val")
+                    End If
+                    MsgBox("222")
+
+                    '.
+                    'If dt.Rows(0).Item("shop_report") Is DBNull.Value Then
+                    '    shop_report_txt.Text = ""
+                    'Else
+                    '    shop_report_txt.Text = dt.Rows(0).Item("shop_report")
+                    'End If
+                    '..
+                    'Dim con_est_name_ As String = DSconest.Tables(0).Rows(z).Item(1) '«·«” ﬁÿ«⁄«  «·À«» Â
+                    'Dim con_est_val_ As Integer = DSconest.Tables(0).Rows(z).Item(2)
+                    '..
+                    Dim cmdString As String = "INSERT INTO archief " + _
+                                              "(emp_id ,date_,con_est_name,con_est_val) " + _
+                                              "VALUES('" & i_d & "','" & date_.Text & "','" & con_est_name_ & "','" & con_est_val_ & "')"
+                    Dim cmd As New SqlClient.SqlCommand(cmdString, Con)
+                    cmd.ExecuteNonQuery()
+                    '////////////////////////////////////////////////////
+                    'Next
+
+                    '..
+                    'Dim est_akry_name_ As String = DSconest.Tables(0).Rows(z).Item(1)'«·«” ﬁÿ«⁄«  «·«Œ—Ì
+                    '..
+                    'Dim cmdup As String = "UPDATE archief SET con_est_name = '" & con_est_name_ & "',con_est_val = '" & con_est_val_& "' WHERE emp_id = '" & i_d & "'"
+                    'Dim cmd2 As New SqlClient.SqlCommand(cmdup, Con)
+                    'cmd.ExecuteNonQuery()
+                    '//////////////////////////////////////
+
+                    '''''Dim cmdString2 As String = "UPDATE archief " + _
+                    '''''                        "SET con_est_name = '" & con_est_name_ & "',con_est_val = '" & con_est_val_ & "'" + _
+                    '''''                        "WHERE emp_id = '" & i_d & "'"
+                    '''''Dim cmd222 As New SqlClient.SqlCommand(cmdString2, Con)
+                    '''''cmd222.ExecuteNonQuery()
+                    '////////////////////////////////////////////
+
+
+                Next
+            MsgBox("·ﬁœ  „ Õ›Ÿ «·”Ã· »‰Ã«Õ", MsgBoxStyle.Information, " ‰»ÌÂ")
+            Next
+            ADP02.Dispose()
+
+        End If
+        '\\\\\\\\\
+       
+        '\\\\\\\\\\
+        Con.Close()
